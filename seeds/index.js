@@ -26,6 +26,13 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Quaerat dolores facilis tenetur obcaecati sint ex culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora eligendi odio sequi assumenda consequatur animi impedit repudiandae quod consequuntur, dolor mollitia totam ea, fuga, maiores alias deleniti eveniet repellat.',
             price,
+            geometry: { 
+                type: 'Point', 
+                coordinates:  [ 
+                    cities[random1000].longitude,
+                    cities[random1000].latitude    
+                 ] 
+            },
             images: [
                 {
                     url: 'https://res.cloudinary.com/dswiwf7k7/image/upload/v1690461747/CAMP_NIGER/o1kizoq1z6nlmj3dory3.jpg',
